@@ -1,0 +1,297 @@
+/* Trainers Page - Professional Light Brand */
+
+.trainers {
+  width: 100%;
+}
+
+/* ===== HEADER ===== */
+.trainers-header {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark) 0%,
+    var(--primary-color) 100%
+  );
+  color: white;
+  text-align: center;
+}
+
+.trainers-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1600&h=800&fit=crop")
+    center/cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.trainers-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.trainers-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.trainers-header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== TRAINERS GRID ===== */
+.trainers-grid {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background: #ffffff;
+}
+
+.trainer-card {
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  border: none;
+  transition: none;
+}
+
+.trainer-card:hover {
+  transform: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.trainer-image {
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.trainer-card:hover .trainer-image img {
+  transform: scale(1.05);
+}
+
+.trainer-info {
+  padding: 0;
+}
+
+.trainer-info h3 {
+  color: var(--text-light);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.specialty {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.bio {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.trainer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.trainer-details strong {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.trainer-details span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.trainer-card .btn {
+  width: 100%;
+}
+
+/* ===== TRAINING OPTIONS ===== */
+.training-options {
+  padding: 100px 20px;
+  background: #f9fafb;
+}
+
+.training-options h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--text-light);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.options-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.option-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.option-card h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.option-card p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.option-card ul {
+  list-style: none;
+}
+
+.option-card li {
+  color: var(--text-muted);
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.option-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* ===== QUALIFICATIONS ===== */
+.qualifications {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.qualifications h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--text-light);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.qual-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.qual-item {
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark) 0%,
+    var(--primary-color) 100%
+  );
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+}
+
+.qual-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.qual-item p {
+  line-height: 1.6;
+  opacity: 0.95;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .trainers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .trainers-header h1 {
+    font-size: 2rem;
+  }
+
+  .trainers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qual-grid {
+    grid-template-columns: 1fr;
+  }
+}
